@@ -20,12 +20,14 @@
     body {
       margin: 0;
       min-height: 100vh;
+      min-height: 100dvh;
       display: grid;
       place-items: center;
-      padding: 24px;
+      padding: 16px;
       font-family: "Trebuchet MS", "Segoe UI", sans-serif;
       color: var(--text);
       background: var(--bg);
+      overflow: hidden;
     }
 
     main {
@@ -36,11 +38,11 @@
     img {
       max-width: min(100%, 126px);
       height: auto;
-      margin-bottom: 24px;
+      margin-bottom: 16px;
     }
 
     h1 {
-      margin: 0 0 12px;
+      margin: 0 0 10px;
       font-size: clamp(1.4rem, 2.8vw, 2.1rem);
       line-height: 1.05;
       letter-spacing: 0.04em;
@@ -49,7 +51,7 @@
 
     p {
       margin: 0;
-      font-size: clamp(1.65rem, 3vw, 2.025rem);
+      font-size: clamp(1.2rem, 2.4vw, 1.5rem);
       color: var(--muted);
     }
 
