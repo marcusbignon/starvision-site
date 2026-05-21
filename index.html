@@ -58,13 +58,55 @@
     strong {
       color: var(--accent);
     }
+
+    strong a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-left: 6px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(244, 247, 251, 0.18);
+      background: rgba(244, 247, 251, 0.06);
+      color: var(--text);
+      text-decoration: underline;
+      text-decoration-color: rgba(244, 247, 251, 0.45);
+      text-underline-offset: 3px;
+      cursor: pointer;
+      transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
+    }
+
+    strong a:hover,
+    strong a:focus-visible {
+      background: rgba(37, 211, 102, 0.12);
+      border-color: rgba(37, 211, 102, 0.4);
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    .whatsapp-icon {
+      width: 18px;
+      height: 18px;
+      flex: none;
+    }
   </style>
 </head>
 <body>
   <main>
     <img src="logo.png" alt="Logo Starvision">
     <h1>Site em construção</h1>
-    <p>Contato: <strong>21 98622-2710</strong></p>
+    <p>
+      Contato:
+      <strong>
+        <a href="https://wa.me/5521986222710?text=Eu%20gostaria%20de%20receber%20um%20or%C3%A7amento%20da%20StarVision." target="_blank" rel="noreferrer">
+          <svg class="whatsapp-icon" viewBox="0 0 32 32" aria-hidden="true">
+            <path fill="#25D366" d="M16.02 3.2c-7 0-12.68 5.68-12.68 12.68 0 2.23.58 4.4 1.67 6.31L3 29l7-1.84a12.74 12.74 0 0 0 6.02 1.53h.01c7 0 12.68-5.68 12.68-12.68 0-3.39-1.32-6.57-3.72-8.96A12.59 12.59 0 0 0 16.02 3.2Z"/>
+            <path fill="#FFF" d="M12.4 10.3c-.25-.57-.52-.58-.77-.59h-.66c-.23 0-.6.09-.92.44-.32.35-1.22 1.2-1.22 2.92 0 1.72 1.25 3.38 1.42 3.61.17.23 2.43 3.9 6 5.3 2.97 1.16 3.57.93 4.22.87.65-.06 2.1-.86 2.39-1.69.29-.83.29-1.53.2-1.69-.09-.16-.32-.26-.66-.44-.34-.17-2.1-1.03-2.43-1.15-.32-.12-.55-.17-.78.17-.23.35-.89 1.15-1.09 1.38-.2.23-.4.26-.74.09-.34-.17-1.45-.54-2.76-1.72-1.02-.91-1.71-2.04-1.91-2.38-.2-.35-.02-.53.15-.7.15-.15.34-.4.52-.6.17-.2.23-.35.35-.58.11-.23.06-.44-.03-.61-.08-.17-.74-1.81-1.03-2.44Z"/>
+          </svg>
+          21 98622-2710
+        </a>
+      </strong>
+    </p>
   </main>
 </body>
 </html>
